@@ -7,7 +7,7 @@
 
 An [llm](https://llm.datasette.io/) plugin that proofreads Japanese text with the
 [Shodo](https://shodo.ink/) AI proofreading API. We use this plugin to proofread
-Japanese text in our [Kafkai Blog](https://kafkai.com/ja/blog/) and [PuchiDen Blogs](https://puchiden.app/ja/blog/)
+Japanese text in our [Kafkai Blog](https://kafkai.com/ja/blog/), [Kafkai AI Media](https://kafkai.ai/) and [PuchiDen Blog](https://puchiden.app/ja/blog/)
 as part of our editorial pipeline.
 
 The plugin is a simple Python script that uses the `llm` API to add a new command and tool.
