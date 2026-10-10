@@ -1,0 +1,34 @@
+[project]
+name = "llm-tools-shodo"
+version = "0.1"
+description = "Proofread Japanese text with the Shodo AI proofreading API"
+readme = "README.md"
+authors = [{name = "Iqbal Abdullah"}]
+license = "Apache-2.0"
+classifiers = []
+requires-python = ">=3.10"
+dependencies = [
+    "llm>=0.27",
+    "httpx2",
+    "click",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+# Without this, setuptools sees templates/ and ships it instead of the module.
+py-modules = ["llm_tools_shodo"]
+
+[project.urls]
+Homepage = "https://github.com/kafkaigiken/llm-tools-shodo"
+Changelog = "https://github.com/kafkaigiken/llm-tools-shodo/releases"
+Issues = "https://github.com/kafkaigiken/llm-tools-shodo/issues"
+CI = "https://github.com/kafkaigiken/llm-tools-shodo/actions"
+
+[project.entry-points.llm]
+llm_tools_shodo = "llm_tools_shodo"
+
+[project.optional-dependencies]
+test = ["pytest", "llm-echo>=0.3a1"]
