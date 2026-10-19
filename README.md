@@ -30,7 +30,7 @@ Empty input never reaches the API.
 ## Installation
 
 Install this plugin in the same environment as [LLM](https://llm.datasette.io/).
-You need LLM 0.27 or newer and Python 3.10 or newer.
+You need LLM 0.33 or newer and Python 3.10 or newer.
 
 ```bash
 llm install llm-tools-shodo

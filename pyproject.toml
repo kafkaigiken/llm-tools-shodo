@@ -1,6 +1,6 @@
 [project]
 name = "llm-tools-shodo"
-version = "0.1"
+version = "0.1.1"
 description = "Proofread Japanese text with the Shodo AI proofreading API"
 readme = "README.md"
 authors = [{name = "Iqbal Abdullah"}]
@@ -8,7 +8,8 @@ license = "Apache-2.0"
 classifiers = []
 requires-python = ">=3.10"
 dependencies = [
-    "llm>=0.27",
+    # 0.33 is the first llm release that depends on httpx2.
+    "llm>=0.33",
     "httpx2",
     "click",
 ]
